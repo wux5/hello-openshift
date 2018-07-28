@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('kick off') {
       steps {
-        sh 'echo "Let\'s start"'
+        sh '''echo "Let\'s start";
+docker version'''
       }
     }
     stage('build') {
