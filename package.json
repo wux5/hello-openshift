@@ -8,7 +8,8 @@
         "npm": "*"
     },
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "test": "echo testing..."
     },
     "dependencies": {
         "express": "^4.13.4"
