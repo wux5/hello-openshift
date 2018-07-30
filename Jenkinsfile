@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:10-alpine'
-      args '-v ./:/hello-openshift'
+      args '-v `pwd`:/hello-openshift'
     }
 
   }
