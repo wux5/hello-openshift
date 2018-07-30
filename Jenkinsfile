@@ -9,10 +9,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh '''echo `pwd`;
-ls -l;
-cd /proj;
-ls -l;'''
+        sh 'npm install && npm test'
       }
     }
   }
