@@ -11,7 +11,8 @@ pipeline {
       steps {
         sh '''node --version;
 cd /hello-openshift;
-npm install && npm test'''
+ls -l;
+#npm install && npm test'''
       }
     }
   }
