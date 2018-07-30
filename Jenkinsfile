@@ -10,6 +10,7 @@ pipeline {
     stage('test') {
       steps {
         sh '''node --version;
+cd /hello-openshift;
 npm install && npm test'''
       }
     }
